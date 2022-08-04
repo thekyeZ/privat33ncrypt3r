@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>privat33ncrypt3r</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Raleway', sans-serif;
+
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+
+            background-color: rgb(10, 16, 17);
+            color: aliceblue;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        form {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        textarea {
+            color: black;
+            font-weight: 400;
+            padding: 10px;
+  
+        }
+
+        form label {
+            display: flex;
+            flex-direction: column;
+        }
+
+        button {
+            padding: 20px;
+            outline: none;
+            border: none;
+            margin-top: 20px;
+
+            background: rgb(24, 140, 218);
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <form>
+        <label>
+            Zakoduj:
+            <textarea cols="80"  rows="20" id="encdode"></textarea>
+        </label>
+
+        <label>
+            Dekoduj:
+            <textarea cols="80"  rows="20" id="decode"></textarea>
+        </label>
+    </form>
+
+
+    <p id="result">
+
+    </p>
+
+    <button>Kopiuj</button>
+
+<script src="./app.js"></script>
+
+</body>
+</html>
